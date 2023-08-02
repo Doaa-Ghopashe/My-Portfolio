@@ -5,7 +5,6 @@ import { ProfileContext } from '../context/ProjectContext'
 
 export default function About() {
     const data = useContext(ProfileContext);
-    console.log(data)
     const [certificates , setCertificates] = useState((data.certificates));
     const [hobbies , setHobbies] = useState((data.hobbies));
     const [skills , setSkills] = useState((data.skills));
